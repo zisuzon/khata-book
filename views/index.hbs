@@ -1,0 +1,29 @@
+
+{{#if allCustomers.length }}
+  <ul>
+    {{#each allCustomers}}
+      <li>
+        <a href="/details">
+          {{ this.name }}<br>
+          {{ this.createdAt }}<br>
+
+          {{#if this.deposit }}
+            <p>আমার কাছে পাবে {{ this.balance }}</p>
+          {{else if this.due}}
+            <p>আমি পাবো {{ this.balance }}</p>
+          {{else}}
+          <p>লেনদেন নেই</p>
+          {{/if}}
+        </a>
+      </li>
+    {{/each}}
+</ul>
+{{else}}
+  <p>
+    নিচের বাটনে ক্লিক করুন নতুন কাস্টমার যোগ করতে।
+  </p>
+
+{{/if}}
+
+
+<a href="/accounts/create">+ নতুন কাস্টমার</a>
