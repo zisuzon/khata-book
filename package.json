@@ -15,7 +15,7 @@
     "http-errors": "~1.6.3",
     "mongoose": "^5.9.2",
     "morgan": "~1.9.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
